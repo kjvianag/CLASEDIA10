@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 4</title>
+</head>
+<body>
+
+    <script>
+        let nombre = prompt("Ingrese su nombre");
+        let edad = prompt("Ingrese su edad");
+        let estudiante = prompt("¿Es estudiante? si/no").toLowerCase() === "si";
+        let mensaje = '';
+
+        if(edad >= 18){
+            mensaje = nombre + " es mayor de edad";
+        }else{
+            mensaje = nombre + " es menor de edad";
+        }
+        
+        if(estudiante){
+            mensaje += " y tiene descuento.";
+        }else{
+            mensaje += " y no tiene descuento.";
+            
+        }
+        
+        alert(mensaje);
+    </script>
+    
+</body>
+</html>
